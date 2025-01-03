@@ -1,0 +1,175 @@
+body{
+   
+}
+
+.content{
+    max-width: 1200px;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+}
+
+.table-responsive{
+    border: none;
+}
+
+.rotateslider-container .rotateslider-item.next, .rotateslider-container .rotateslider-item.prev{
+    z-index: -1;
+}
+.rotateslider-item {
+    border: 1px solid red;
+    height: 300px;
+    width: 290px;
+    background: #fff;
+}
+.rotateslider-item h2 {
+    color: #FF211D;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-align: center;
+    padding:0.5em;
+}
+.price-back-rotateslider {
+    background: #545553;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+}
+.rotateslider-item-back1 {
+    padding: 1em;
+    width: 55%; 
+    text-align: center;
+}
+.rotateslider-item-back2 {
+    background: #7C7D7B;
+    padding: 1em;
+    width: 45%; 
+    text-align: center;
+}
+.rotateslider-item-back1 h3 {
+    font-size: 3.5em;
+    font-weight: 600;
+}
+.rotateslider-item-back2 h3 {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+.rotateslider-item-back1 span, .rotateslider-item-back2 span {
+    font-size: 0.6em;
+    padding: 0.05em;
+}
+.rotateslider-item-back1 p, .rotateslider-item-back2 p {
+    font-size: 0.6em;
+    line-height: 1;
+}
+.m30{
+    font-size: 0.6em;
+    line-height: 1;
+}
+.equipment {
+    font-family:sans-serif; 
+    font-size: 1em;
+    color: #545553;
+    padding: 1em;
+}
+.equipment span {
+    font-weight: 600;
+}
+
+.mob{
+    display: none;
+}
+
+@media (max-width: 650px) {
+    .rotateslider-item-back1, .rotateslider-item-back2 {
+        padding: 0.5em;
+    }
+    .rotateslider-item-back1 h3 {
+        font-size: 3em;
+        padding: 0 0.5em;
+    }
+    .rotateslider-item-back2 h3 {
+        font-size: 2em;
+        padding: 0 0.5em;
+    }
+    .rotateslider-item-back1 span, .rotateslider-item-back2 span {
+        font-size: 0.5em;
+    }
+    .rotateslider-item-back1 p, .rotateslider-item-back2 p {
+        font-size: 0.5em;
+    }
+    .equipment {
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 480px) {
+    .comparison h4{
+        font-size: 1.2em 
+    }
+    .comparison h3, .comparison h1{
+        font-size: 1.5em;
+    }
+    .comparison{
+        padding: 0px;
+        display: none;
+    }
+    .comparison .price-now span{
+         font-size: .8em !important;
+        
+    }
+    .comparison .price-info{
+        padding: 5px;
+    }
+    .comparison td{
+        padding: 7px;
+    }
+    .comparison tr td:first-child {
+        padding: 10px;
+    }
+    .comparison tr td:first-child {
+
+    }
+    
+    .fijo{
+        position: absolute
+    }
+        .mob{
+      display: flex;
+              margin-bottom: 20px;
+  margin-top: 30px;
+    }
+    
+}
+
+
+@media (max-width: 360px) {
+    .rotateslider-container .rotateslider-item.next, .rotateslider-container .rotateslider-item.prev{
+        display: none;
+        
+    }
+    .rotateslider-item {
+        height: 260px;
+        width: 230px;
+    }
+    .rotateslider-item h2 {
+        font-size: 1.4em;
+        padding: 0.8em 0.3em;
+    }
+    .rotateslider-item-back1 h3 {
+        font-size: 2.5em;
+    }
+    .rotateslider-item-back2 h3 {
+        font-size: 1.8em;
+        padding: 0;
+    }
+    .rotateslider-item-back1 {
+        width: 50%;
+    }
+    .rotateslider-item-back2 {
+        width: 40%;
+    }
+    
+
+}

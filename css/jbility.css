@@ -1,0 +1,263 @@
+/*	ACESSIBILIDADE
+*	jBility
+* https://github.com/urielcaire/jbility
+*/
+
+.pagina-acessivel {
+	background: #000!important;
+	color: #FFF!important;
+}
+.pagina-acessivel div.bc-f0f0f0 {
+	background: #000!important;
+}
+.pagina-acessivel h1, .pagina-acessivel h2, .pagina-acessivel h3, .pagina-acessivel h4, .pagina-acessivel td{
+	color: #FFF!important;
+}
+
+.pagina-acessivel a, .pagina-acessivel h1 a, .pagina-acessivel h2 a, .pagina-acessivel h3 a, .pagina-acessivel h4 a, .pagina-acessivel i{
+	text-decoration: none;
+	color: #FFFF00!important;
+}
+
+.pagina-acessivel a:hover{
+	text-decoration: underline;
+}
+
+.pagina-acessivel .dropdown-menu{
+	border-color: #FFF!important;
+}
+
+.pagina-acessivel li.active > a{
+	color: 	#FF0000!important;
+}
+
+.acess-container{
+	cursor: pointer;
+    display: block;
+    position: fixed;
+    left: 0px;
+    bottom: 40px;
+    z-index: 9999;
+}
+
+#jbbutton{
+	margin-left: 0px;
+	width: 54px;
+	height: 54px;
+	float: left;
+    display:none;
+}
+
+.acess-icon{
+    margin:0 1px;
+	float: left;
+}
+
+#acess-icons{
+	/*display: none;*/
+    width: calc(122px * 3);
+    margin:0 auto;
+    text-align: center;
+}
+
+.f-transparent{
+	background-color: transparent!important;
+}
+
+.balloon {
+    position: relative;
+    display: inline-block;
+}
+
+.balloon .balloontext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #1e88e5;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #FFF;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.balloon .balloontext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #1e88e5 transparent transparent transparent;
+}
+
+.balloon:hover .balloontext {
+    visibility: visible;
+}
+img.desaturate {
+    /*filter: sepia(100%) contrast(200%) brightness(1.0) saturate(200%);*/
+    filter: grayscale() invert() contrast(105%) saturate(103%);
+}
+
+/*Neu*/
+
+.dacc {
+
+   z-index: 10;
+    
+/*position:fixed!important;
+bottom:12%!important;
+right:.0em!important;
+z-index:10!important;
+    text-align: center!important;*/
+}
+
+.dacc button {
+    
+ position:fixed;right: 0;width:62px;height: 54px; bottom:40%; padding:1em 0;background:url(../../d13td37o1xvqr3.cloudfront.net/imagenes/universal-access.png) right center no-repeat #3367d6;background-size: cover; transition: all 0.2s ease 0.2s; border-radius: 4px 0 0 4px;    
+    
+/*padding:5% 5% 0% 5%;
+border-radius: 8px 0 0 8px;*/
+}
+
+.btn-primary.active, .btn-primary:active, .open >.dropdown-toggle.btn-primary  {
+    background:url(../../d13td37o1xvqr3.cloudfront.net/imagenes/universal-access.png) right center no-repeat #3367d6!important;background-size: cover;
+}
+
+.dacc button:hover {
+    width:210px;cursor: pointer;
+    background:url(../../d13td37o1xvqr3.cloudfront.net/imagenes/universal-access.png) right center no-repeat #3367d6;background-size: cover;
+}
+
+.dacc > button > img {
+    display:none;
+}
+.dacc .dropdown-menu > li {
+color:#000;
+background:#000;
+    margin:0;
+    padding: 0!important ;
+    border-bottom: 2px solid #fff;
+}
+.dacc .dropdown-menu > li > a {
+color:#000;
+background:none;
+    margin:0;
+    padding: 0!important ;
+}
+#dvisual, #search {
+    display: none;
+}
+#acontrol {
+display:none;
+margin:1em 0 0 0;
+    text-align: left;
+}
+#acontrol img {
+    width:3em;
+    height:3em;
+}
+#dvisual img {
+    width:75%;
+    height:auto;
+}
+#search img {
+    width:75%;
+    height:auto;
+}
+#acontrol .btn {
+    background: none;
+    width: auto;
+    height: auto;
+    margin:0 .5%;
+    padding: 0;
+}
+.dacc .dropdown-menu {
+    min-width: 210px;
+    padding: 0;
+    z-index: 100;
+    position: fixed;
+    left: calc(100% - 210px);
+    width: 210px;
+    top: calc(65% - 285px);
+    z-index: 1000!important;
+}
+
+#dvisual, #acontrol, #search {
+    background: #000!important;
+    padding: 1em;
+    width: 100%!important;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+}
+
+#close {
+    position: absolute;
+    right: 40px;
+    cursor: pointer;   
+}
+#closes {
+    position: absolute;
+    right: 40px;
+    cursor: pointer;   
+}
+#text-search {
+    width:75%!important;
+    margin:0 5%!important;
+    float: left;
+    display:inline-block;
+    margin-bottom:2em;
+    height: 3em;
+    border: none;
+    border-radius: 4px;
+}
+#slab {
+    width:10%;
+    margin:1.2% 0 0 5%;
+    font-size: 18px;
+    font-family: 'Hind', sans-serif;
+    float: left;
+    display:inline-block;
+}
+#search etiqueta {
+    padding:1em 0 4em 0!important;
+    margin: 1em 0 1em 25%!important;
+    border-radius: 8px;
+}
+a#closea.opcAcc {
+    float:right;
+    color:#fff;
+    font-size:37px;
+    line-height: 20px;
+    margin:0;
+}
+a#closea.opcAcc:hover {
+    cursor: hand;
+}
+
+/*#menu-access {
+    position: absolute!important;
+    right:0!important;
+    width: 132px!important;
+}
+
+/*the new component*/
+
+/*.access_btn {position:fixed;right: 0;width:54px;height: 54px; bottom:25%; padding:1em 0;background:url(https://d13td37o1xvqr3.cloudfront.net/imagenes/access.svg) right center no-repeat #3367d6;background-size: cover; transition: all 0.2s ease 0.2s; border-radius: 4px 0 0 4px;}
+    .access_btn:hover {width:210px;cursor: pointer;}
+    .accm {background: #000;border-radius: 4px 0 0 4px;position: fixed;width:210px;bottom: 154px;right: 0;text-align: center;padding:0 1em;}
+    .acct {color:#fff; font-size: 1.7rem;padding:.5em 0 0 0;margin:0;}
+    .accs {width: 100%; border-top:1px solid #666;float: left;padding: 1em 0;}
+    .accs:hover {text-decoration: underline;text-decoration-color: #fff;}
+
+/*the new component*/
+
+
+/*@media only screen and (min-width : 320px) and (max-width : 480px) {
+ #ftest {margin:0px 0 -15em 0!important;}
+}*/
